@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detailed overview of EventHub's flagship conference event: Next-Gen AI & Human Interfaces keynote and workshops.">
+    <meta name="keywords" content="AI keynote, human-computer interaction, tech workshops, coding guidelines">
+    <meta name="author" content="EventHub Organizing Committee">
+    <title>EventHub – Flagship Event Details</title>
+</head>
+<body>
+    <!-- Header with Site Branding and Global Navigation -->
+    <header>
+        <div id="branding">
+            <h1>Event<span>Hub</span> 2026</h1>
+            <p><em>Where Innovation Meets Collaboration</em></p>
+        </div>
+        <hr>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><strong><a href="event-details.html">Flagship Event Details</a></strong></li>
+                <li><a href="schedule.html">Schedule & Pricing</a></li>
+                <li><a href="gallery.html">Media Gallery</a></li>
+                <li><a href="registration.html">Register Now</a></li>
+                <li><a href="contact.html">Venue & Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <section id="event-header">
+            <h2>Flagship Event: Next-Gen AI &amp; Human Interfaces</h2>
+            <p>
+                <strong>Host Track:</strong> Track A (Technology &amp; Development)<br>
+                <strong>Date &amp; Time:</strong> Day 1, 09:00 AM - 10:45 AM (Opening Keynote)<br>
+                <strong>Venue:</strong> Grand Auditorium (Hall A) &amp; Livestream Stream-1
+            </p>
+            <p>
+                <mark>Important Update:</mark> Seats in Hall A are limited. In-person registration closes when capacity is reached. Livestream tickets remain unlimited.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Detailed Description -->
+        <section id="event-description">
+            <h3>Event Overview</h3>
+            <p>As artificial intelligence shifts from a backend API call to the core framework of digital interaction, developers and designers must collaborate to construct interfaces that are intuitive, safe, and robust. This event kicks off with a keynote from <strong>Dr. Evelyn Vance</strong> (Director of Human-Centered Systems at NeuralCorp), followed by a panel discussion and hands-on workshops.</p>
+            
+            <blockquote>
+                "AI-driven interfaces shouldn't replace user agency; they should multiply it. The goal is to build glasses for the mind, not autopilot for the soul."
+                <br>
+                <cite>— <a href="about.html#keynote-bio">Dr. Evelyn Vance</a> during her TechCon 2025 speech</cite>
+            </blockquote>
+
+            <p>In this event, participants will explore how natural language processing, spatial computing, and accessibility guidelines interact. You'll learn to model adaptive user journeys and build fallback systems when AI outputs are delayed or incorrect.</p>
+        </section>
+
+        <hr>
+
+        <!-- Detailed Agenda (Interactive Accordion) -->
+        <section id="workshop-details">
+            <h3>Interactive Schedule &amp; Workshop Breakdown</h3>
+            <p>Click on each segment below to expand detailed speaker notes, target audiences, and pre-requisites.</p>
+
+            <details>
+                <summary><strong>09:00 AM - 09:45 AM: Keynote Speech (Dr. Evelyn Vance)</strong></summary>
+                <p><strong>Title:</strong> Designing Interfaces for Non-Deterministic Logic</p>
+                <p><strong>Abstract:</strong> Traditional software is rule-based: clicking button A triggers action B. AI systems introduce probability: prompt A might trigger output B, C, or D. Dr. Vance discusses UX frameworks that accommodate statistical probability, ensuring users always feel in control of the interface.</p>
+                <p><em>Pre-requisites:</em> None. Suitable for all tracks.</p>
+            </details>
+
+            <details>
+                <summary><strong>09:45 AM - 10:15 AM: Panel Session: The Ethics of Assistive Systems</strong></summary>
+                <p><strong>Panelists:</strong> Dr. Evelyn Vance, Marcus Aurelius (UX Lead at Apex), Sarah Jenkins (AI Policy Advocate)</p>
+                <p><strong>Focus:</strong> Addressing algorithmic bias in user recommendation layers, designing transparent data consent gates, and keeping accessibility front-and-center when designing voice-controlled assistants.</p>
+                <p><em>Audience:</em> Founders, product designers, ethicists, developers.</p>
+            </details>
+
+            <details>
+                <summary><strong>10:15 AM - 10:45 AM: Technical Coding Lab: Integrating Local LLMs</strong></summary>
+                <p><strong>Lab Lead:</strong> Dave Miller (Cloud Architect)</p>
+                <p><strong>Technical Stack:</strong> WebGPU, ONNX Runtime, and WebNN.</p>
+                <p><strong>Instructions:</strong> We will walk through running a lightweight LLM directly on the client web browser. Developers will write code to initiate local token streaming.</p>
+                
+                <p><em>Code Snippet Preview:</em></p>
+                <pre><code>
+// Initializing a local WebNN model session
+const session = await WebNN.createSession({
+    modelPath: './assets/models/llama-3-light.onnx',
+    executionProvider: 'webgpu'
+});
+
+console.log("Model successfully loaded into memory!");
+                </code></pre>
+                
+                <p><em>Action Plan for Attendees:</em></p>
+                <p>To run this local demo, open your developer console using <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> (or <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>I</kbd> on macOS). You will execute the script using the variable <var>session</var> to evaluate raw inference speed (<samp>inference_time_ms</samp>).</p>
+            </details>
+        </section>
+
+        <hr>
+
+        <!-- Interactive guidelines and downloads -->
+        <section id="guidelines-terms">
+            <h3>Participant Requirements</h3>
+            <p>Please review these specifications carefully before entering the coding lab:</p>
+            <ul>
+                <li><del>No computers are required.</del> <ins>Actually, a personal laptop running Chrome 115+ is required</ins> to run the client-side WebGPU models.</li>
+                <li>Ensure you have local node environment installed. Run <code>node --version</code> in your terminal; it should show version <kbd>v18.0.0</kbd> or higher.</li>
+                <li>Keep safety in mind. Wear ear protection if you participate in the main hardware demos.</li>
+            </ul>
+        </section>
+
+        <p><a href="registration.html"><strong>Register for this Event &rarr;</strong></a></p>
+    </main>
+
+    <hr>
+
+    <!-- Footer Area -->
+    <footer>
+        <p>Copyright &copy; <time datetime="2026">2026</time> EventHub Inc. All rights reserved.</p>
+        <p>
+            <address>
+                EventHub Organizing Committee, 500 Innovation Way, Suite 10, San Jose, CA 95110 | 
+                Email: <a href="mailto:info@eventhub2026.org">info@eventhub2026.org</a> | 
+                Tel: <a href="tel:+15550199">+1 (555) 0199</a>
+            </address>
+        </p>
+        <p>
+            Quick Links: 
+            <a href="about.html">About</a> | 
+            <a href="contact.html">Directions</a> | 
+            <a href="registration.html">Buy Tickets</a> | 
+        </p>
+    </footer>
+</body>
+</html>

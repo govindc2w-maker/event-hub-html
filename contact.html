@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get directions to EventHub 2026 at the Grand Civic Center in San Jose, CA. Reach out to our organizing committee for inquiries.">
+    <meta name="keywords" content="venue location, contact EventHub, event address, driving directions, support email">
+    <meta name="author" content="EventHub Organizing Committee">
+    <title>EventHub – Venue Location & Contact Us</title>
+</head>
+<body>
+    <!-- Header with Site Branding and Global Navigation -->
+    <header>
+        <div id="branding">
+            <h1>Event<span>Hub</span> 2026</h1>
+            <p><em>Where Innovation Meets Collaboration</em></p>
+        </div>
+        <hr>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="event-details.html">Flagship Event Details</a></li>
+                <li><a href="schedule.html">Schedule & Pricing</a></li>
+                <li><a href="gallery.html">Media Gallery</a></li>
+                <li><a href="registration.html">Register Now</a></li>
+                <li><strong><a href="contact.html">Venue & Contact</a></strong></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <h2>Contact Information &amp; Venue Directions</h2>
+        <p>Whether you are attending EventHub 2026 in-person in Silicon Valley or need online platform support, we are here to help. See our physical location, driving guidelines, and contact numbers below.</p>
+        
+        <hr>
+
+        <!-- Venue details section -->
+        <section id="venue-info">
+            <h3>Conference Venue</h3>
+            <p><strong>Grand Civic Center</strong><br>
+            Hall A &amp; Exhibition Courtyard<br>
+            500 Innovation Way, Suite 10, San Jose, CA 95110</p>
+
+            <h4>How to Get Here:</h4>
+            <ul>
+                <li><strong>By Light Rail / Metro:</strong> Take the Blue Line directly to the <em>Innovation Center Station</em>. The venue entrance is a short 3-minute walk north.</li>
+                <li><strong>By Car (From SFO Airport):</strong> Take US-101 South to Guadalupe Parkway (CA-87 South). Exit onto Park Avenue, turn left onto Innovation Way. Public parking is available in the Orange Garage.</li>
+                <li><strong>From Hotels:</strong> Shuttle buses depart every 15 minutes from the Hilton Civic Center and Hyatt Regency San Jose starting at 07:30 AM daily.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Location Map Embed via iframe -->
+        <section id="location-map">
+            <h3>Interactive Venue Map</h3>
+            <p>Use the interactive map below to find driving directions and nearby lodging:</p>
+            
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.33253303862!2d-121.89531582358897!3d37.33465137210086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcb9745d1d643%3A0xcb1b59c7bb0ff2f7!2sSan%20Jose%20McEnery%20Convention%20Center!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                width="100%" 
+                height="450" 
+                style="border:1px solid #333;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+                <p>Your browser does not support embedded map frames. View the map on <a href="https://maps.google.com" target="_blank">Google Maps</a>.</p>
+            </iframe>
+        </section>
+
+        <hr>
+
+        <!-- Direct Contact Info -->
+        <section id="contact-details">
+            <h3>Direct Contact Channels</h3>
+            <p>For immediate support, feel free to call or email our planning divisions:</p>
+            
+            <address>
+                <strong>General Registration &amp; Ticketing:</strong><br>
+                Tel: <a href="tel:+15550199">+1 (555) 0199</a> (Mon-Fri, 9am - 5pm PST)<br>
+                Email: <a href="mailto:tickets@eventhub2026.org?subject=Ticket%20Inquiry">tickets@eventhub2026.org</a>
+            </address>
+            <br>
+            <address>
+                <strong>Sponsorship &amp; Partners:</strong><br>
+                Tel: <a href="tel:+15550188">+1 (555) 0188</a><br>
+                Email: <a href="mailto:partners@eventhub2026.org?subject=Sponsorship%20Proposal">partners@eventhub2026.org</a>
+            </address>
+            <br>
+            <address>
+                <strong>Speaker Liaison &amp; Agenda:</strong><br>
+                Email: <a href="mailto:speakers@eventhub2026.org?subject=Agenda%20Coordination">speakers@eventhub2026.org</a>
+            </address>
+        </section>
+
+        <hr>
+
+        <!-- Quick Query Form -->
+        <section id="query-form">
+            <h3>Send a Quick Inquiry</h3>
+            
+            <form action="https://httpbin.org/post" method="POST">
+                <p>
+                    <label for="contact-name">Your Full Name:</label><br>
+                    <input type="text" id="contact-name" name="sender_name" placeholder="Jane Smith" required>
+                </p>
+                
+                <p>
+                    <label for="contact-email">Your Email Address:</label><br>
+                    <input type="email" id="contact-email" name="sender_email" placeholder="jane.smith@email.com" required>
+                </p>
+
+                <p>
+                    <label for="contact-subject">Topic / Subject:</label><br>
+                    <select id="contact-subject" name="subject" required>
+                        <option value="" disabled selected>-- Choose a Topic --</option>
+                        <option value="ticket-trouble">Problem with ticket purchase</option>
+                        <option value="hotel-deals">Partner hotel discounts inquiry</option>
+                        <option value="diet-accommodations">Dietary or physical accommodations request</option>
+                        <option value="other">Other general inquiry</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="contact-message">Message Details:</label><br>
+                    <textarea id="contact-message" name="message" rows="6" cols="60" placeholder="Type details of your question here..." required minlength="10" maxlength="500"></textarea>
+                </p>
+                
+                <p>
+                    <button type="submit">Send Message &rarr;</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Footer Area -->
+    <footer>
+        <p>Copyright &copy; <time datetime="2026">2026</time> EventHub Inc. All rights reserved.</p>
+        <p>
+            <address>
+                EventHub Organizing Committee, 500 Innovation Way, Suite 10, San Jose, CA 95110 | 
+                Email: <a href="mailto:info@eventhub2026.org">info@eventhub2026.org</a> | 
+                Tel: <a href="tel:+15550199">+1 (555) 0199</a>
+            </address>
+        </p>
+        <p>
+            Quick Links: 
+            <a href="about.html">About</a> | 
+            <a href="contact.html">Directions</a> | 
+            <a href="registration.html">Buy Tickets</a> | 
+        </p>
+    </footer>
+</body>
+</html>

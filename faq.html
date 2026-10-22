@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find answers to frequently asked questions about EventHub 2026 tickets, virtual stream logins, venue access, and conference guidelines.">
+    <meta name="keywords" content="frequently asked questions, event FAQ, ticketing terms, wifi guidelines, code of conduct">
+    <meta name="author" content="EventHub Organizing Committee">
+    <title>EventHub – FAQ & Attendance Guidelines</title>
+</head>
+<body>
+    <!-- Header with Site Branding and Global Navigation -->
+    <header>
+        <div id="branding">
+            <h1>Event<span>Hub</span> 2026</h1>
+            <p><em>Where Innovation Meets Collaboration</em></p>
+        </div>
+        <hr>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="event-details.html">Flagship Event Details</a></li>
+                <li><a href="schedule.html">Schedule & Pricing</a></li>
+                <li><a href="gallery.html">Media Gallery</a></li>
+                <li><a href="registration.html">Register Now</a></li>
+                <li><a href="contact.html">Venue & Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <h2>FAQ &amp; Attendance Guidelines</h2>
+        <p>Before arriving at EventHub 2026, please read through these frequently asked questions and review our conference guidelines. Click on any question to view its detailed response.</p>
+        
+        <hr>
+
+        <!-- FAQ Section -->
+        <section id="faq-accordion">
+            <h3>Frequently Asked Questions</h3>
+            
+            <details>
+                <summary><strong>How do I access the virtual livestream?</strong></summary>
+                <p>All virtual pass holders will receive a custom access link via email on <time datetime="2026-10-14">October 14, 2026</time>. To log in, you will navigate to our virtual portal and enter your registered email address and the password you created during <a href="registration.html">Step 1 of registration</a>.</p>
+            </details>
+            <br>
+            <details>
+                <summary><strong>Can I transfer my ticket to a colleague?</strong></summary>
+                <p>Yes. Ticket transfers are allowed up to 48 hours before the event starts. To request a ticket transfer, please send an email to <a href="mailto:tickets@eventhub2026.org?subject=Ticket%20Transfer%20Request">tickets@eventhub2026.org</a> containing your booking ID, name, and the name/email of the colleague you want to transfer it to. Note that <mark>discounted student tickets can only be transferred to other verified students</mark>.</p>
+            </details>
+            <br>
+            <details>
+                <summary><strong>Is there parking available at the venue?</strong></summary>
+                <p>Yes, parking is available at the Orange Parking Garage located adjacent to the Grand Civic Center. In-person General Admission and VIP pass holders will receive a complimentary parking voucher at the registration check-in desk, which waives the standard $25/day parking fee.</p>
+            </details>
+            <br>
+            <details>
+                <summary><strong>What is the local Wi-Fi configuration at the venue?</strong></summary>
+                <p>We provide high-speed fiber internet throughout all presentation halls. To connect, use the following local credentials when you arrive:</p>
+                <ul>
+                    <li><strong>SSID:</strong> <code>EventHub_Guest_WiFi</code></li>
+                    <li><strong>Password / Passphrase:</strong> <kbd>Innovate2026!</kbd></li>
+                </ul>
+                <p><small>Please review our network usage guidelines. Bandwidth is limited to 50 Mbps symmetric per client. Peer-to-peer sharing and tor-routing are strictly blocked on this network.</small></p>
+            </details>
+            <br>
+            <details>
+                <summary><strong>What is the cancellation and refund policy?</strong></summary>
+                <p>Full refunds are available for cancellations made prior to <time datetime="2026-09-15">September 15, 2026</time>. Cancellations made between September 15 and October 1 are subject to a 50% cancellation fee. No refunds can be issued after <time datetime="2026-10-01">October 1, 2026</time>; however, you may still transfer your pass to another attendee free of charge.</p>
+            </details>
+        </section>
+
+        <hr>
+
+        <!-- Event Guidelines Section -->
+        <section id="guidelines">
+            <h3>Attendance &amp; Tech Guidelines</h3>
+            <p>To ensure all attendees benefit from the hands-on workshops and developer labs, please adhere to these technical guidelines:</p>
+            
+            <h4>1. Hardware Setup &amp; Software Environment</h4>
+            <p>If you are enrolled in Track A (Technology &amp; Development) workshops, you are required to have your own computer. We suggest setting up your terminal parameters as follows:</p>
+            <pre>
+# Check node engine version
+$ node --version
+v18.16.0
+
+# Clone the official laboratory sandbox repo
+$ git clone https://github.com/eventhub-org/sandbox-2026.git
+$ cd sandbox-2026
+$ npm install
+            </pre>
+            <p>If the command returns an error of type <samp>ERESOLVE unable to resolve dependency tree</samp>, run npm install with the override flag: <kbd>npm install --legacy-peer-deps</kbd>.</p>
+
+            <h4>2. In-Person Badge Policy</h4>
+            <p>Your RFID badge is your key to all venue spaces. If you lose your badge, report immediately to the help desk in the Main Foyer. A replacement badge costs <del>$25</del> <ins>$15</ins> (price adjusted for EventHub partners).</p>
+
+            <h4>3. Photography &amp; Consent</h4>
+            <p>By entering the venue, you consent to being photographed or filmed as part of our crowd shots for promotional materials. If you do not wish to be photographed, please ask for a red lanyard at the check-in desk. Photographers will bypass anyone wearing a red lanyard.</p>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Footer Area -->
+    <footer>
+        <p>Copyright &copy; <time datetime="2026">2026</time> EventHub Inc. All rights reserved.</p>
+        <p>
+            <address>
+                EventHub Organizing Committee, 500 Innovation Way, Suite 10, San Jose, CA 95110 | 
+                Email: <a href="mailto:info@eventhub2026.org">info@eventhub2026.org</a> | 
+                Tel: <a href="tel:+15550199">+1 (555) 0199</a>
+            </address>
+        </p>
+        <p>
+            Quick Links: 
+            <a href="about.html">About</a> | 
+            <a href="contact.html">Directions</a> | 
+            <a href="registration.html">Buy Tickets</a> | 
+        </p>
+    </footer>
+</body>
+</html>

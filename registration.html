@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for EventHub 2026. Complete the attendee profile and buy tickets, choose lanyard colors, meal preferences, and upload credentials.">
+    <meta name="keywords" content="event registration, buy tickets, event forms, booking pass">
+    <meta name="author" content="EventHub Organizing Committee">
+    <title>EventHub – Registration & Ticket Booking</title>
+</head>
+<body>
+    <!-- Header with Site Branding and Global Navigation -->
+    <header>
+        <div id="branding">
+            <h1>Event<span>Hub</span> 2026</h1>
+            <p><em>Where Innovation Meets Collaboration</em></p>
+        </div>
+        <hr>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="event-details.html">Flagship Event Details</a></li>
+                <li><a href="schedule.html">Schedule & Pricing</a></li>
+                <li><a href="gallery.html">Media Gallery</a></li>
+                <li><strong><a href="registration.html">Register Now</a></strong></li>
+                <li><a href="contact.html">Venue & Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <h2>Register &amp; Purchase Tickets</h2>
+        <p>Ensure your spot at EventHub 2026. Complete the registration forms below. Fields marked with <span style="color: red;">*</span> are mandatory.</p>
+        
+        <hr>
+
+        <!-- Form 1: Attendee Profile Registration -->
+        <section id="registration-profile">
+            <h3>Step 1: Attendee Profile Setup</h3>
+            <form action="https://httpbin.org/post" method="POST" enctype="multipart/form-data">
+                <!-- Hidden fields for tracking -->
+                <input type="hidden" name="campaign_source" value="main_website_direct">
+                <input type="hidden" name="form_version" value="2.1">
+
+                <fieldset>
+                    <legend>Personal &amp; Contact Details</legend>
+                    
+                    <p>
+                        <label for="reg-fullname">Full Name <span style="color: red;">*</span>:</label><br>
+                        <input type="text" id="reg-fullname" name="fullname" placeholder="John Doe" required autofocus autocomplete="name" minlength="3" maxlength="50" title="Please enter your full legal name.">
+                    </p>
+                    
+                    <p>
+                        <label for="reg-email">Email Address <span style="color: red;">*</span>:</label><br>
+                        <input type="email" id="reg-email" name="email" placeholder="john.doe@company.com" required autocomplete="email" title="Enter a valid business email address.">
+                    </p>
+
+                    <p>
+                        <label for="reg-phone">Telephone Number <span style="color: red;">*</span>:</label><br>
+                        <input type="tel" id="reg-phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required autocomplete="tel" title="Please format your phone as: 123-456-7890">
+                    </p>
+
+                    <p>
+                        <label for="reg-password">Create Account Password (to manage tickets later) <span style="color: red;">*</span>:</label><br>
+                        <input type="password" id="reg-password" name="password" required minlength="8" placeholder="••••••••" title="Password must be at least 8 characters long.">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Professional Background &amp; Credentials</legend>
+                    
+                    <p>
+                        <label for="reg-company">Company / Institution:</label><br>
+                        <input type="text" id="reg-company" name="company" placeholder="Acme Corporation" maxlength="100">
+                    </p>
+
+                    <p>
+                        <label for="reg-website">Portfolio / Professional URL:</label><br>
+                        <input type="url" id="reg-website" name="website" placeholder="https://myportfolio.com" pattern="https://.*" title="Must start with https://">
+                    </p>
+
+                    <p>
+                        <label for="reg-search-job">Job Title (Search from list):</label><br>
+                        <input type="search" id="reg-search-job" name="job_title" placeholder="Search title..." list="job-titles">
+                        <datalist id="job-titles">
+                            <option value="Software Engineer">
+                            <option value="Frontend Developer">
+                            <option value="UI/UX Designer">
+                            <option value="Product Manager">
+                            <option value="Data Scientist">
+                            <option value="Technology Consultant">
+                            <option value="Venture Capitalist">
+                            <option value="Founder / CEO">
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <label for="reg-id-upload">Upload Student/Corporate ID (For verification discounts, PDF/Images only):</label><br>
+                        <input type="file" id="reg-id-upload" name="id_file" accept=".pdf,image/*">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Security Verification</legend>
+                    <p>
+                        <label for="reg-date">Choose Preferred Date of Arrival:</label><br>
+                        <!-- Setting date limits for the event duration Oct 15-17, 2026 -->
+                        <input type="date" id="reg-date" name="arrival_date" min="2026-10-15" max="2026-10-17" value="2026-10-15">
+                    </p>
+                    <p>
+                        <label for="reg-time">Estimated Check-in Time:</label><br>
+                        <input type="time" id="reg-time" name="checkin_time" min="08:00" max="18:00">
+                    </p>
+                </fieldset>
+
+                <br>
+                <p>
+                    <button type="submit">Submit Profile Data</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Form 2: Ticket Purchase & Preferences Form -->
+        <section id="ticket-booking">
+            <h3>Step 2: Ticket Booking &amp; Preference Form</h3>
+            <form action="https://httpbin.org/post" method="POST">
+                
+                <fieldset>
+                    <legend>Pass Selection &amp; Logistics</legend>
+
+                    <p>
+                        <label for="ticket-type">Choose Pass Type <span style="color: red;">*</span>:</label><br>
+                        <select id="ticket-type" name="ticket_type" required>
+                            <option value="" disabled selected>-- Select a Ticket Tier --</option>
+                            <optgroup label="Virtual Passes">
+                                <option value="virtual-keynotes">Virtual Keynotes Access - $49</option>
+                                <option value="virtual-all">Virtual All-Access - $79</option>
+                            </optgroup>
+                            <optgroup label="In-Person Passes">
+                                <option value="in-person-general">General In-Person Admission - $399</option>
+                                <option value="in-person-vip">VIP All-Access Pass - $749</option>
+                            </optgroup>
+                            <optgroup label="Discounts">
+                                <option value="student-pass">Student In-Person Discount (Verify ID above) - $199</option>
+                                <option value="academic-virtual">Academic Virtual Pass - Free</option>
+                            </optgroup>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="ticket-quantity">Quantity (Max 10 passes per transaction) <span style="color: red;">*</span>:</label><br>
+                        <input type="number" id="ticket-quantity" name="quantity" min="1" max="10" value="1" required title="You can purchase between 1 and 10 tickets.">
+                    </p>
+
+                    <p>
+                        <label for="lanyard-color">Preferred Lanyard Custom Color (For physical badges):</label><br>
+                        <input type="color" id="lanyard-color" name="badge_color" value="#0000ff">
+                        <small>Default color is Blue.</small>
+                    </p>
+
+                    <p>
+                        <label for="group-interest">Rate your interest level in the Hackathon (0 = None, 10 = High):</label><br>
+                        0 <input type="range" id="group-interest" name="hackathon_interest" min="0" max="10" value="5"> 10
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Preferences &amp; Feedback</legend>
+                    
+                    <p><strong>Dietary Preferences (For in-person attendees only):</strong></p>
+                    <p>
+                        <input type="checkbox" id="diet-veg" name="diet" value="vegetarian">
+                        <label for="diet-veg">Vegetarian</label><br>
+                        
+                        <input type="checkbox" id="diet-vegan" name="diet" value="vegan">
+                        <label for="diet-vegan">Vegan</label><br>
+                        
+                        <input type="checkbox" id="diet-gf" name="diet" value="gluten-free">
+                        <label for="diet-gf">Gluten-Free</label><br>
+                        
+                        <input type="checkbox" id="diet-halal" name="diet" value="halal">
+                        <label for="diet-halal">Halal</label><br>
+                        
+                        <input type="checkbox" id="diet-none" name="diet" value="none" checked>
+                        <label for="diet-none">No specific dietary requirements</label>
+                    </p>
+
+                    <p><strong>Accommodation Assistance Needed?</strong></p>
+                    <p>
+                        <input type="radio" id="acc-yes" name="accommodation" value="yes">
+                        <label for="acc-yes">Yes, send me partner hotel deals</label><br>
+                        
+                        <input type="radio" id="acc-no" name="accommodation" value="no" checked>
+                        <label for="acc-no">No, I will manage my own stay</label>
+                    </p>
+
+                    <p>
+                        <label for="reg-meal-detail">Detail any specific meal/allergy preferences or comments:</label><br>
+                        <textarea id="reg-meal-detail" name="meal_detail" rows="4" cols="50" placeholder="E.g., peanut allergy, nut-free requests..."></textarea>
+                    </p>
+
+                    <p>
+                        <label for="reg-feedback">How did you hear about us?</label><br>
+                        <textarea id="reg-feedback" name="how_heard" rows="3" cols="50" placeholder="Please mention if a speaker or friend referred you."></textarea>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- Agreement & Validation Checkbox -->
+                <p>
+                    <input type="checkbox" id="agree-terms" name="agree" value="yes" required>
+                    <label for="agree-terms">I agree to the Event Code of Conduct and privacy policy.<span style="color: red;">*</span></label>
+                </p>
+
+                <!-- Action Button -->
+                <p>
+                    <button type="submit">Complete Booking &amp; Pay &rarr;</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Footer Area -->
+    <footer>
+        <p>Copyright &copy; <time datetime="2026">2026</time> EventHub Inc. All rights reserved.</p>
+        <p>
+            <address>
+                EventHub Organizing Committee, 500 Innovation Way, Suite 10, San Jose, CA 95110 | 
+                Email: <a href="mailto:info@eventhub2026.org">info@eventhub2026.org</a> | 
+                Tel: <a href="tel:+15550199">+1 (555) 0199</a>
+            </address>
+        </p>
+        <p>
+            Quick Links: 
+            <a href="about.html">About</a> | 
+            <a href="contact.html">Directions</a> | 
+            <a href="registration.html">Buy Tickets</a> | 
+        </p>
+    </footer>
+</body>
+</html>
